@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     Resources myResources = getResources();
                     InputStream myFile = myResources.openRawResource(R.raw.file);
-                    
+
                     byte[] buff = new byte[1000];
                     myFile.read(buff);
                     txtV.setText("He leído: " + new String(buff));
